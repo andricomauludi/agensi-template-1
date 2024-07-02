@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Kontak - Agensi PhD. Dokter ke Korea dan Jepang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            /* Warna latar belakang untuk seluruh halaman */
+        }
+
+        .navbar {
+            background-color: #1CA3CC;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #77BF49;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .section {
+            padding: 40px;
+            background-color: #FFFFFF;
+            color: #333;
+            text-align: center;
+        }
+
+        .fullpage-section {
+            height: 100vh;
+            background-image: url('./image/fotogedung.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .fullpage-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Opacity gelap */
+        }
+
+        .fullpage-section .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            /* Warna teks di atas foto */
+            z-index: 1;
+        }
+
+        .fullpage-section h3 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .fullpage-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .fullpage-section .contact-info {
+            margin-top: 40px;
+        }
+
+        .fullpage-section .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #1CA3CC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="contact.html">Kontak</a>
+    </div>
+
+    <section class="fullpage-section">
+        <div class="container">
+            <div class="content">
+                <h3>Informasi Kontak</h3>
+                <p><i class="icon">📧</i> Email: info@agensiPhD.dokter.com</p>
+                <p><i class="icon">📱</i> WhatsApp: +62 123 4567 8901</p>
+                <p><i class="icon">📷</i> Instagram: @agensiPhD.dokter</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Agensi PhD. Dokter ke Korea dan Jepang. All Rights Reserved.</p>
+    </div>
+
+    <script src="./js/script.js">
+
+    </script>
+</body>
+
+</html>

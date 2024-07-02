@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Agensi PhD. Dokter ke Korea dan Jepang</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section {
+            padding: 60px 20px;
+            background-color: #FFFFFF;
+            color: #333;
+            padding: 100px;
+        }
+
+        .section h1,
+        .section h2,
+        .section h3 {
+            color: #1CA3CC;
+        }
+
+        .section p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section ul li {
+            margin: 10px 0;
+        }
+
+        .team-section {
+            background-color: #F9F9F9;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #1CA3CC;
+            font-size: 2.5em;
+            /* Font size diperbesar */
+        }
+
+        .team-section .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-section .member {
+            flex: 1 1 30%;
+            max-width: 30%;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img-container3 {
+            width: 80%;
+            padding-top: 80%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .img-container3 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .img-container3 img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-section .member h3 {
+            margin: 10px 0 5px;
+        }
+
+        .team-section .member p {
+            margin: 5px 0;
+        }
+
+        .team-section .member p.role {
+            font-weight: bold;
+        }
+
+        .fullpage-section {
+            height: 75vh;
+            background-image: url('./image/fotokami.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .fullpage-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Opacity gelap */
+        }
+
+        .fullpage-section .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            /* Warna teks di atas foto */
+            z-index: 1;
+        }
+
+        .fullpage-section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .fullpage-section p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            background-color: #FFFFFF;
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #1CA3CC;
+            font-size: 2.5em;
+            /* Font size diperbesar */
+        }
+
+        .goals-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .goal-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 60px;
+            max-width: 1000px;
+            /* Optional: Adjust max-width as needed */
+            text-align: left;
+        }
+
+        .circle-image-container {
+            width: 400px;
+            /* Adjust width as needed */
+            height: 400px;
+            /* Adjust height as needed */
+            border-radius: 50%;
+            /* To create a circular shape */
+            overflow: hidden;
+        }
+
+        .circle-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            /* Ensure image inside container is also circular */
+            transition: transform 0.3s;
+        }
+
+        .circle-image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .goal-item p {
+            flex: 1;
+            font-size: 1.5em;
+            line-height: 1.6;
+            padding-left: 20px;
+            /* Spacing between image and text */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="contact.html">Kontak</a>
+    </div>
+    <section class="fullpage-section">
+        <div class="container">
+            <div class="content">
+                <h2>Tentang Kami</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="text-align: center; background-color: #fecb88;">
+        <h1 class="scale-in" style="font-size: 5em; color: #333;">Berkenalan lebih lanjut</h1>
+        <p style="font-size: 1.5em;" class="slide-in-left">Agensi PhD. Dokter ke Korea dan Jepang adalah sebuah lembaga
+            yang berdedikasi untuk
+            membantu para calon
+            mahasiswa dalam melanjutkan pendidikan PhD. di bidang Kedokteran di Korea dan Jepang. Kami berkomitmen untuk
+            memberikan layanan terbaik dengan bimbingan profesional yang didukung oleh jaringan luas kami di
+            universitas-universitas terkemuka di Korea dan Jepang.</p>
+    </section>
+
+    <section class="section team-section">
+        <h2 class="scale-in">Siapa Kami</h2>
+        <p style="font-size: 1.5em;" class="slide-in-left">Tim kami terdiri dari para profesional yang berpengalaman di
+            bidang pendidikan
+            internasional dan konsultasi
+            akademis. Kami memiliki berbagai latar belakang, termasuk para ahli pendidikan, konselor akademis, dan
+            profesional medis yang telah menempuh studi dan bekerja di luar negeri. Dengan pengalaman dan keahlian kami,
+            kami siap membantu Anda mencapai tujuan akademis Anda.</p>
+
+        <div class="team">
+            <div class="member">
+                <div class="img-container3 slide-in-left">
+                    <img src="./image/fotodokter1.jpg" alt="Dr. John Doe">
+                </div>
+                <h3 class="fade-in">Dr. John Doe</h3>
+                <p class="role fade-in">Founder & CEO</p>
+                <p class="fade-in">Dr. John Doe memiliki pengalaman lebih dari 20 tahun di bidang pendidikan dan telah
+                    membantu ratusan
+                    mahasiswa mencapai impian akademis mereka di luar negeri.</p>
+            </div>
+            <div class="member">
+                <div class="img-container3 slide-in-left">
+                    <img src="./image/fotodokter2.jpg" alt="Dr. Jane Smith">
+                </div>
+                <h3 class="fade-in">Dr. Jane Smith</h3>
+                <p class="role fade-in">Co-Founder & COO</p>
+                <p class="fade-in">Dr. Jane Smith adalah seorang ahli pendidikan dengan pengalaman internasional yang
+                    luas. Dia telah
+                    bekerja di berbagai universitas terkemuka di Korea dan Jepang.</p>
+            </div>
+            <div class="member">
+                <div class="img-container3 slide-in-left">
+                    <img src="./image/fotodokter3.jpg" alt="Dr. Emily Brown">
+                </div>
+                <h3 class="fade-in">Dr. Emily Brown</h3>
+                <p class="role fade-in">Chief Academic Advisor</p>
+                <p class="fade-in">Dr. Emily Brown adalah seorang konselor akademis yang berpengalaman dengan latar
+                    belakang di bidang
+                    kedokteran. Dia telah membantu banyak mahasiswa dalam merencanakan dan mencapai studi mereka di luar
+                    negeri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2 class="scale-in">Tujuan Kami</h2>
+        <div class="goals-container">
+            <div class="goal-item fade-in">
+                <div class="circle-image-container">
+                    <img src="./image/univ.png" alt="Proses Pendaftaran">
+                </div>
+                <p>Memfasilitasi proses pendaftaran dan penerimaan di universitas-universitas terkemuka di Korea dan
+                    Jepang.</p>
+            </div>
+            <div class="goal-item fade-in">
+                <p>Menyediakan informasi dan bimbingan mengenai beasiswa, kehidupan di luar negeri, dan persiapan
+                    akademis.</p>
+                <div class="circle-image-container">
+                    <img src="./image/beasiswa.jpg" alt="Informasi Beasiswa">
+                </div>
+            </div>
+            <div class="goal-item fade-in">
+                <div class="circle-image-container">
+                    <img src="./image/koneksi.jpg" alt="Membangun Jaringan">
+                </div>
+                <p>Membangun jaringan yang kuat dengan universitas dan lembaga pendidikan untuk membuka lebih banyak
+                    peluang bagi mahasiswa.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Agensi PhD. Dokter ke Korea dan Jepang. All Rights Reserved.</p>
+    </div>
+
+    <script src="./js/script.js">
+
+    </script>
+</body>
+
+</html>
