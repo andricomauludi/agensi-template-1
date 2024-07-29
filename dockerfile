@@ -3,9 +3,10 @@ FROM nginx:alpine
 
 COPY . /usr/share/nginx/html/
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 3001 (for your static content)
-EXPOSE 3000
+EXPOSE 3003
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
