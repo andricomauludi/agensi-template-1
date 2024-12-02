@@ -3,6 +3,10 @@ FROM nginx:alpine
 
 COPY . /usr/share/nginx/html/
 
+# Copy the custom Nginx configuration
+COPY ../default.conf /etc/nginx/conf.d/default.conf
+
+
 # Expose port 3001 (for your static content)
 EXPOSE 3003
 
